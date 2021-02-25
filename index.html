@@ -1,0 +1,219 @@
+<!DOCTYPE html> 
+<html/>
+<head>
+ <title> Bootstrap </title>
+	<meta charset=UTF-8">
+	<meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href = "bootstrap-4.5.3-dist/css/bootstrap.css"/>
+	<link rel="stylesheet" href = "bootstrap-4.5.3-dist/js/bootstrap.js"/>
+	<script src= "jquery-v3.5.1.js">	</script>
+<style>	
+body{background-color:rgba(209, 101, 18, 0.5); padding-bottom:0;}
+.nav-link{ color:white; font-weight:bold; text-decoration:none; margin:1rem;}
+.card{ margin:1rem; width: 15rem; background-color:#d3ccc2;}
+.card img{ margin:auto; width: 50%; padding:2rem 0rem;}
+.card-text{text-indent:5%;}
+.contimg{margin-top: 2rem;}
+.contimg img{width:100%;}
+@media only screen and (max-width:600px){ 
+ .insmall{display:block;}
+ }
+ @media only screen and (min-width:600px){
+ .insmall{display:none;}
+ }
+
+</style>
+</head>
+	<body>
+	
+	
+	<nav class="navbar navbar-expand-lg navbar-expand-sm navbar-expand-md insmall "  style="background-color:#d16512;"><img src="images/logo.png" style="width:20%;" />
+    <a class="navbar-brand  " style= " color:white; font-size:2rem;" href="#"><b>Tours Zone</b></a>
+<img class="col-2 id="menu" src="images/menu.svg"  />
+	</nav>
+	
+<nav class="navbar navbar-expand-lg navbar-expand-sm navbar-expand-md d-none d-sm-block " id="thepage" style="background-color:#d16512; font-size:2rem;">
+  <div class="container-fluid">
+    <img src="images/logo.png" class = " col-lg-1 col-md-1 col-sm-2" />
+    <a class="navbar-brand " style= " color:white; font-size:2rem;" href="#"><b>Tours Zone</b></a>
+    <div class="collapse navbar-collapse d-flex flex-row-reverse " id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <li class="nav-item">
+          <a class="nav-link active "  aria-current="page" href="#carouselExampleCaptions">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#ourteam">Our Team</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contactus" tabindex="-1" aria-disabled="true">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br/>
+
+<div id="carouselExampleCaptions" class="carousel slide col-10" style="margin:auto;" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class=" dot"></li>
+    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class= "dot" ></li>
+    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class= "dot"></li>
+  </ol>
+  <div class="carousel-inner ">
+    <div class="carousel-item  mySlides ">
+      <img src="images/1.jpg" class="d-block w-100" >
+      <div class="carousel-caption d-none d-md-block">
+        <p> Get ready for your next trip</p>
+      </div>
+    </div>
+    <div class="carousel-item  mySlides">
+      <img src="images/2.jpg" class="d-block w-100" >
+      <div class="carousel-caption d-none d-md-block">
+        <p>You will have an adventurous trip</p>
+      </div>
+    </div>
+    <div class="carousel-item mySlides">
+      <img src="images/3.jpg" class="d-block w-100 " >
+      <div class="carousel-caption d-none d-md-block">
+        <p>To make an unforgettable memories </p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" onclick="plusSlides(-1)" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next " onclick="plusSlides(1)" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden" >Next</span>
+  </a>
+</div>
+<br/>
+
+
+<div class=" col-10 card-group" style=" margin: auto;" id="ourteam">
+<h2 class=" col-10 " style= " font-weight:bold; text-align:center;" > Our Team </h2>
+<div class= "row" style=" margin: auto;">
+<div class="card col-lg-3 col-md-3 col-8 col-sm-8" >
+  <img src="images/male.png" class="card-img-top" alt="male icon">
+  <div class="card-body">
+    <h4> Harry Jacob </h4>
+    <p class="card-text"> Sales Manager </p>
+  </div> 
+</div>
+<div class="card col-lg-3 col-md-3 col-8 col-sm-8" >
+  <img src="images/female.png" class="card-img-top" alt="female icon">
+  <div class="card-body">
+     <h4> Emma Michael </h4>
+    <p class="card-text"> Tours Operator </p>
+  </div> 
+</div> 
+<div class="card col-lg-3 col-md-3 col-8 col-sm-8" >
+  <img src="images/male.png" class="card-img-top" alt="male icon">
+  <div class="card-body">
+    <h4> Yousef Adam </h4>
+    <p class="card-text"> Software Engineer </p>
+  </div> 
+</div>
+</div>
+</div>
+
+<br/>
+<div class="container col-10" style="margin:auto;"  id="gallery">
+<h2 style= "text-align:center; font-weight:bold;" > From previous Trips </h2>
+<div class= "row">
+<div class=" contimg col-4" >
+  <img src="images/Egypt.jpg" class="card-img-top" alt="Egypt">
+</div>
+<div class=" contimg col-4" >
+  <img src="images/brazil.jpg" class="card-img-top "  alt="brazil">
+</div>
+<div class=" contimg col-4" >
+  <img src="images/Turkey.jpg" class="card-img-top" alt="Turkey">
+</div>
+</div>
+
+<div class= "row">
+<div class=" contimg col-4" >
+  <img src="images/venice.jpg" class="card-img-top" alt="venice">
+</div>
+<div class=" contimg col-4" >
+  <img src="images/india.jpg" class="card-img-top "  alt="india">
+</div>
+<div class=" contimg col-4" >
+  <img src="images/Kenya.jpg" class="card-img-top" alt="Kenya">
+</div>
+</div>
+
+<div class= "row">
+<div class=" contimg col-4" >
+  <img src="images/oman.jpg" class="card-img-top" alt="oman">
+</div>
+<div class=" contimg col-4" >
+  <img src="images/Greece.jpg" class="card-img-top "  alt="greece">
+</div>
+<div class=" contimg col-4" >
+  <img src="images/spain.jpg" class="card-img-top" alt="spain">
+</div>
+</div>
+</div>
+<br/>
+<div class="container col-10" style="margin:auto;"  id="contactus">
+<h2 style= "text-align:center; font-weight:bold;" > Contact us </h2>
+
+<form>
+   <div class="mb-3">
+  <label for="exampleFormControlInput1" style="color:black; font-size:1.5rem;" class="form-label">Your Name</label>
+  <input type="text" class="form-control col-4" id="exampleFormControlInput1">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" style="color:black; font-size:1.5rem;" class="form-label">Your Message</label>
+  <textarea class="form-control col-8" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+  <button type="submit" class="btn" style="background-color:#D16512; color:white;">Submit</button>
+</form>
+</div>
+<a href="#thepage" style="text-decoration:none;" > <img  src="images/plane.png"  style=" z-index: 2; width:5%; position:fixed; right:2%; bottom:2%; float:right; "/></a> 
+	</br>
+	<footer  class= " col-12" style= "text-align:center; background-color:#d16512; width:100%; color:white;">
+    <br/>
+  <span >@Alaa Mohamed.ITI.E-learning Track </span>
+    </br>
+	</br>
+	</footer>
+	</body>
+	<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+	</script>
+	</html>
